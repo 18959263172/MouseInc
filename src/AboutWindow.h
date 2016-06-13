@@ -31,12 +31,12 @@ private:
         int width = 350 - x;
 
         RECT pos = { x, y, x + width, y + hight };
-        text1.Create(m_hWnd, pos, L"版本：2.1", WS_CHILD | WS_VISIBLE | ES_AUTOHSCROLL);
+        text1.Create(m_hWnd, pos, L"版本：2.2", WS_CHILD | WS_VISIBLE | ES_AUTOHSCROLL);
         text1.SetFont(font);
 
         y += hight;
         pos = { x, y, x + width, y + hight };
-        text2.Create(m_hWnd, pos, L"时间：2015年12月31日", WS_CHILD | WS_VISIBLE | ES_AUTOHSCROLL);
+        text2.Create(m_hWnd, pos, L"时间：2016年6月13日", WS_CHILD | WS_VISIBLE | ES_AUTOHSCROLL);
         text2.SetFont(font);
 
         y += hight;

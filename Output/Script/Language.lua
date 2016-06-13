@@ -2,13 +2,14 @@
 local Language = {}
 
 --简体中文，作者shuax
-Language["zh-CN"] = 
+Language["zh-CN"] =
 {
     --程序内置语言
     ["name"] = "MouseInc",
     ["description"] = "MouseInc 鼠标增强软件",
 
     ["mouse_gesture"] = "鼠标手势",
+    ["scroll_through"] = "滚轮穿透",
     ["natural_scroll"] = "自然滚动",
     ["through_border"] = "穿越边界",
 
@@ -54,13 +55,14 @@ Language["zh-CN"] =
 
 
 --臺灣中文，作者ZH-TW
-Language["zh-TW"] = 
+Language["zh-TW"] =
 {
     --程式內建語言
     ["name"] = "MouseInc",
     ["description"] = "MouseInc 滑鼠增強軟體",
 
     ["mouse_gesture"] = "滑鼠手勢",
+    ["scroll_through"] = "滾輪穿透",
     ["natural_scroll"] = "自然捲動",
     ["through_border"] = "穿越版邊",
 
@@ -83,15 +85,25 @@ Language["zh-TW"] =
     --滑鼠手勢命令
     ['None'] = "無動作",
     ['Exit'] = "結束程式",
+    ['ToggleTrayIcon'] = "切換托盤圖標",
     ['Calc'] = "小算盤",
     ['TopWindow'] = "視窗置頂",
     ['NoTopWindow'] = "取消視窗置頂",
-    ['Minimize'] = "最小化視窗",
-    ['Maximize'] = "最大化視窗",
-    ['Restore'] = "還原視窗",
-    ['Close'] = "關閉視窗",
-    ['CloseSimilar'] = "關閉相似視窗",
-    ['Center'] = "置中視窗",
+    ['MinimizeWindow'] = "最小化視窗",
+    ['MaximizeWindow'] = "最大化視窗",
+    ['RestoreWindow'] = "還原視窗",
+    ['CloseWindow'] = "關閉視窗",
+    ['CloseSimilarWindow'] = "關閉相似視窗",
+    ['CenterWindow'] = "置中視窗",
+    ['Exclude'] = "排除當前程式",
+
+    ['NewTab'] = "新建標簽頁",
+    ['CloseTab'] = "關閉標簽頁",
+    ['RightTab'] = "下壹個標簽頁 ",
+    ['LeftTab'] = "上壹個標簽頁 ",
+    ['Forward'] = "前進",
+    ['Backward'] = "後退",
+    ['Refresh'] = "刷新頁面",
 }
 
 return Language

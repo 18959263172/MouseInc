@@ -1,7 +1,7 @@
 #include <windows.h>
 //#include <VersionHelpers.h>
 
-#include <vld.h>
+//#include <vld.h>
 
 #include <GdiPlus.h>
 using namespace Gdiplus;

@@ -1,7 +1,4 @@
-﻿#include <mutex>
-#include <chrono>
-#include <thread>
-#include <condition_variable>
+﻿#include <thread>
 
 //OnGestureBegin跨线程调用
 void OnGestureBegin()
@@ -59,8 +56,12 @@ public:
             else
             {
                 ignore_mouse_event = true;
-                SendOneMouse(MOUSEEVENTF_RIGHTDOWN);
-                SendOneMouse(MOUSEEVENTF_RIGHTUP);
+                
+                std::thread th1(SendOneMouse, MOUSEEVENTF_RIGHTDOWN);
+                th1.detach();
+                Sleep(10);
+                std::thread th2(SendOneMouse, MOUSEEVENTF_RIGHTUP);
+                th2.detach();
             }
             running_ = false;
             recognition_ = false;
